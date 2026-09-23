@@ -12,6 +12,8 @@ Site personnel de Rémi Buczek, pages statiques publiées par GitHub Pages depui
 
 Les fichiers des dossiers sont transmis par Rémi après demande. Le site ne contient pas de service de capture d’emails ni de newsletter automatique.
 
+Les quatre récits suivent le fil « Le défi / Mon intervention / L’opportunité ». Les extraits Givaudan, Galileo et InVivo montrent la page correspondante des dossiers. Les repères historiques restent distincts de l’objectif de productivité de l’offre.
+
 La cible de +50 à +100 % de productivité vient de l’estimation de Rémi. Elle est présentée comme une ambition sur les tâches retenues, à préciser au cadrage et à mesurer. Elle n’est pas un résultat attribué aux missions historiques. Indicateurs : tâches validées par heure, coût complet par tâche validée, acceptation à la première revue et part des tâches réalisées avec l’agent.
 
 Historique des choix et sources de travail conservés dans le dépôt privé de Rémi, hors de ce site public.
