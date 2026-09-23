@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://remibuczek.com/sitemap.xml
