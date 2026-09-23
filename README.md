@@ -4,7 +4,7 @@ Site personnel statique de Rémi Buczek, publié par GitHub Pages depuis `main` 
 
 ## Parcours
 
-- `index.html` : promesse centrée sur les experts, références défilantes, quatre métiers et secteurs, présentation réunifiée avec la pratique Head of Product hands-on, méthode en quatre étapes, contact unique.
+- `index.html` : promesse IA agentique, triptyque métier/problème/agent, rendez-vous direct, références défilantes, bénéfices et quatre indicateurs réunis, quatre métiers illustrés, présentation et méthode personnelle, accompagnement en quatre étapes.
 - `offre.html` : landing d’acquisition autonome, hors navigation de la home.
 - `ressources.html` : accès historique aux cas et à la méthode personnelle ; pas d’extraits affichés. Les ancres historiques sont conservées.
 - `assets/site.css` : styles partagés, contrastes renforcés, petits écrans et réduction des animations.
@@ -12,9 +12,13 @@ Site personnel statique de Rémi Buczek, publié par GitHub Pages depuis `main` 
 
 Sept références nominales établies : Givaudan, Galileo, InVivo / Soufflet, EPEX SPOT, Pierre & Vacances Center Parcs, ManoMano et La Fourche. Six logos réels, ManoMano en texte. Aucune entreprise inventée pour compléter la quinzaine déclarée dans le parcours. Logo La Fourche : [source officielle](https://lafourche.fr/icons/brand_logos/fr.svg), SVG sans script ni ressource externe.
 
-Les pictogrammes métier sont des repères graphiques génériques, sans prétention à représenter un outil client. Les anciens aperçus restent accessibles à leurs URL historiques, mais ne sont plus présentés dans les pages. Aucun PDF complet ni document client brut dans ce dépôt. Les quatre futurs visuels photographiques ont des prompts séparés dans le dossier de travail privé ; ils ne sont pas encore générés.
+Les quatre scènes métier dans `assets/experts/` sont des illustrations fictives créées avec l’outil intégré GPT Image, indiquées comme telles près des cartes. Elles ne représentent pas des locaux, logiciels ou interfaces clients. WebP 1536 × 1024, environ 533 Ko au total. Prompts exacts et originaux conservés dans le dossier privé. Le portrait de Rémi est une photo réelle fournie, uniquement redimensionnée et compressée. Logos HEC et GEM dans la biographie ; aucune certification Produit non vérifiée ajoutée.
 
-Le chiffre +50 à +100 % exprime une estimation de potentiel sur les tâches ciblées, à préciser et mesurer. Les graduations des cas sont des repères de maturité produit déclarés par Rémi, pas des nombres d’utilisateurs ni des taux de croissance audités.
+La couverture du guide Hands-on figure dans le sous-bloc de méthode personnelle, avec un schéma HTML/CSS « Organisation classique → Ma pratique augmentée ». Ce schéma présente le fonctionnement revendiqué par Rémi, pas un organigramme client ni une suppression de postes constatée. Les autres aperçus restent accessibles à leurs URL historiques. Aucun PDF complet ni document client brut dans ce dépôt.
+
+Le chiffre +50 à +100 % exprime une estimation de potentiel sur les tâches ciblées, à préciser et mesurer. Les quatre indicateurs sont affichés sans accordéon. « Contexte produit » est un raccourci de praticiens, pas une norme ni des nombres d’utilisateurs : Malteur 0→1, Parfumeur 1→10, Pédagogue 10→100, Trader 100→1 000, selon la dernière répartition demandée par Rémi.
+
+Trois familles d’actions : rendez-vous sur `https://calendly.com/remibuczek/call`, quatre demandes d’étude de cas, une demande de méthode. Le carrousel dispose d’une commande par icône et libellé accessible, d’une pause au survol/focus et d’un respect de la réduction des animations.
 
 ## Formulaires et raccordement à venir
 

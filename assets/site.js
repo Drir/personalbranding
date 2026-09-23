@@ -5,19 +5,51 @@
   const logoToggle = document.getElementById("logos-toggle");
 
   if (logoMarquee && logoToggle) {
-    const updateLogoToggle = (paused) => {
+    const logoRegion = logoMarquee.closest(".references") || logoMarquee;
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    let manuallyPaused = logoMarquee.dataset.paused === "true";
+    let hovered = false;
+    let pointerPaused = null;
+
+    const updateLogoToggle = () => {
+      const paused = manuallyPaused || hovered || reducedMotion.matches;
       logoMarquee.dataset.paused = String(paused);
       logoToggle.setAttribute("aria-pressed", String(paused));
-      logoToggle.textContent = paused ? "Reprendre le défilement" : "Pause";
+      logoToggle.innerHTML = paused
+        ? '<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="m9 5 11 7-11 7Z" fill="currentColor"/></svg>'
+        : '<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M7 5h4v14H7zm6 0h4v14h-4z" fill="currentColor"/></svg>';
       logoToggle.setAttribute(
         "aria-label",
         paused ? "Reprendre le défilement des références" : "Mettre les références en pause"
       );
     };
-    updateLogoToggle(logoMarquee.dataset.paused === "true");
-    logoToggle.addEventListener("click", () => {
-      updateLogoToggle(logoMarquee.dataset.paused !== "true");
+    logoMarquee.addEventListener("mouseenter", () => {
+      hovered = true;
+      updateLogoToggle();
     });
+    logoMarquee.addEventListener("mouseleave", () => {
+      hovered = false;
+      updateLogoToggle();
+    });
+    logoRegion.addEventListener("focusin", () => {
+      // Keyboard focus stops rotation until the visitor explicitly restarts it.
+      manuallyPaused = true;
+      updateLogoToggle();
+    });
+    logoToggle.addEventListener("pointerdown", () => {
+      // Preserve the intended action if pointer focus pauses before click fires.
+      pointerPaused = manuallyPaused;
+    });
+    logoToggle.addEventListener("click", (event) => {
+      const wasPaused = event.detail > 0 && pointerPaused !== null
+        ? pointerPaused
+        : manuallyPaused;
+      manuallyPaused = !wasPaused;
+      pointerPaused = null;
+      updateLogoToggle();
+    });
+    reducedMotion.addEventListener("change", updateLogoToggle);
+    updateLogoToggle();
   }
 
   const dialog = document.getElementById("lead-dialog");
