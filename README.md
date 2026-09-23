@@ -1,19 +1,32 @@
 # remibuczek.com
 
-Site personnel de Rémi Buczek, pages statiques publiées par GitHub Pages depuis `main` (racine), sur le domaine défini dans `CNAME`.
+Site personnel statique de Rémi Buczek, publié par GitHub Pages depuis `main` (racine), domaine défini dans `CNAME`.
 
-- `index.html` : parcours commercial complet sur une seule page. Le menu mène aux ancres de l’accueil : accompagnement de 90 jours, quatre récits métier, biographie avec portrait et HEC, livre.
-- `offre.html` : landing page autonome pour les campagnes d’acquisition, hors navigation principale de l’accueil.
-- `ressources.html` : deux collections — études de cas métier et livre Head of Product Hands-on. Extraits publics ; demandes de documents par email préparé, sans collecte ni remise automatisée.
-- `assets/site.css` : styles partagés des trois pages.
-- `assets/logos/` : cinq marques issues des ressources de travail ; elles illustrent le parcours professionnel, sans partenariat commercial annoncé.
-- `assets/resources/` : couvertures et extraits des études Givaudan, Galileo, InVivo, du dossier EPEX et du livre complet. Marée est fictif ; les grilles de cas sont des reconstructions pédagogiques. Les anciens aperçus restent disponibles à leurs URL historiques.
-- Portrait réel existant, mentions légales, 404, robots et domaine conservés. Aucun document client brut ni PDF complet dans ce dépôt.
+## Parcours
 
-Les fichiers des dossiers sont transmis par Rémi après demande. Le site ne contient pas de service de capture d’emails ni de newsletter automatique.
+- `index.html` : promesse centrée sur les experts, références défilantes, quatre métiers et secteurs, présentation réunifiée avec la pratique Head of Product hands-on, méthode en quatre étapes, contact unique.
+- `offre.html` : landing d’acquisition autonome, hors navigation de la home.
+- `ressources.html` : accès historique aux cas et à la méthode personnelle ; pas d’extraits affichés. Les ancres historiques sont conservées.
+- `assets/site.css` : styles partagés, contrastes renforcés, petits écrans et réduction des animations.
+- `assets/site.js` : dialogues accessibles et pause du carrousel, sans suivi d’audience ni stockage local.
 
-Les quatre récits suivent le fil « Le défi / Mon intervention / L’opportunité ». Les extraits Givaudan, Galileo et InVivo montrent la page correspondante des dossiers. Les repères historiques restent distincts de l’objectif de productivité de l’offre.
+Sept références nominales établies : Givaudan, Galileo, InVivo / Soufflet, EPEX SPOT, Pierre & Vacances Center Parcs, ManoMano et La Fourche. Six logos réels, ManoMano en texte. Aucune entreprise inventée pour compléter la quinzaine déclarée dans le parcours. Logo La Fourche : [source officielle](https://lafourche.fr/icons/brand_logos/fr.svg), SVG sans script ni ressource externe.
 
-La cible de +50 à +100 % de productivité vient de l’estimation de Rémi. Elle est présentée comme une ambition sur les tâches retenues, à préciser au cadrage et à mesurer. Elle n’est pas un résultat attribué aux missions historiques. Indicateurs : tâches validées par heure, coût complet par tâche validée, acceptation à la première revue et part des tâches réalisées avec l’agent.
+Les pictogrammes métier sont des repères graphiques génériques, sans prétention à représenter un outil client. Les anciens aperçus restent accessibles à leurs URL historiques, mais ne sont plus présentés dans les pages. Aucun PDF complet ni document client brut dans ce dépôt. Les quatre futurs visuels photographiques ont des prompts séparés dans le dossier de travail privé ; ils ne sont pas encore générés.
 
-Historique des choix et sources de travail conservés dans le dépôt privé de Rémi, hors de ce site public.
+Le chiffre +50 à +100 % exprime une estimation de potentiel sur les tâches ciblées, à préciser et mesurer. Les graduations des cas sont des repères de maturité produit déclarés par Rémi, pas des nombres d’utilisateurs ni des taux de croissance audités.
+
+## Formulaires et raccordement à venir
+
+Rémi a confirmé qu’aucun outil de collecte/CRM n’est encore choisi. Actuellement, le formulaire valide l’email et le consentement puis prépare un `mailto` dans la messagerie du visiteur. Le visiteur doit l’envoyer lui-même. Aucun lead n’est enregistré automatiquement, aucune newsletter n’est ajoutée, aucun succès d’envoi n’est simulé.
+
+Pour raccorder un service choisi par Rémi :
+
+1. Obtenir son URL publique de formulaire HTTPS acceptant POST multipart et CORS. Ne jamais exposer une clé serveur dans ces fichiers.
+2. Ajouter `data-endpoint="URL_DU_FORMULAIRE"` au formulaire `#lead-form` des trois pages (ou au générateur local utilisé). Un éventuel `data-delivery` personnalise le texte de confirmation après une réponse HTTP réussie.
+3. Champs transmis : `email`, `message` facultatif, `resource`, `consent` et `_gotcha` (piège antispam). Le service doit router les demandes à Rémi, distinguer les études et la méthode, et rester limité à cette demande.
+4. Mettre à jour l’information sur les données pour refléter le prestataire et le traitement réellement configurés ; tester réception et erreurs avec une adresse autorisée avant mise en service.
+
+États gérés : validation, envoi en cours, confirmation après HTTP réussi, erreur conservant la saisie. Une demande d’étude ouvre le dialogue correspondant ; Échap ferme et restaure le focus sur le déclencheur.
+
+Sources, preuves, prompts d’illustration et historique éditorial conservés dans le dépôt privé de Rémi.
