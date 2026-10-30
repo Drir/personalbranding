@@ -26,3 +26,240 @@ dialog{position:fixed;inset:0;margin:auto;width:min(560px,calc(100vw - 32px));ma
 @media(prefers-reduced-motion:reduce){.book-preview{transform:none}}
 @media print{.site,.btn,footer,dialog,.logo-group[aria-hidden=true],#logos-toggle{display:none}.section{padding:28px 0}.logo-track{animation:none}.logo-marquee{overflow:visible}.case-grid,.steps{display:block}.expert-card,.step{break-inside:avoid;margin-bottom:20px}.contact{background:white;color:var(--ink)}.bio-visual{position:static}}
 .cases .section-heading h1{font-size:clamp(34px,4vw,52px)}
+
+/* Personal profile, October 2026. Scoped to keep the historical offer intact. */
+.profile-page .eyebrow{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:18px}
+.profile-page .nav{min-height:82px}
+.profile-page .nav nav{gap:24px}
+.profile-page .hero{padding:60px 0 48px}
+.profile-page .hero-grid{display:grid;grid-template-columns:minmax(0,1fr) 310px;gap:62px;align-items:center}
+.profile-page .hero-copy{min-width:0}
+.profile-page .hero h1{font-size:clamp(46px,4.6vw,66px);line-height:1.07;letter-spacing:-.055em}
+.profile-page .hero h1 mark{display:inline-block}
+.profile-page .hero-lede{max-width:49ch;font-size:20px;line-height:1.6;margin-top:26px}
+.profile-page .hero-practice{font-size:15px;color:var(--body);margin-top:14px}
+.profile-page .hero-actions{gap:24px;margin-top:26px}
+.profile-page .hero-actions .text-link{font-size:14px;text-decoration:none;white-space:nowrap}
+.profile-page .hero-actions .text-link:hover{text-decoration:underline}
+.profile-page .hero-facts{display:flex;gap:32px;border-top:1px solid var(--line);padding-top:22px;margin-top:30px;font-size:14px;color:var(--body)}
+.profile-page .hero-facts strong{color:var(--ink);font-size:24px;font-weight:750;letter-spacing:-.035em;margin-right:4px}
+.profile-page .hero-portrait{position:relative;margin:0}
+.profile-page .hero-portrait picture{display:block;border-radius:8px 8px 0 0;overflow:hidden;background:#e9e4dc}
+.profile-page .hero-portrait img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.profile-page .hero-portrait figcaption{background:#eeeae1;border-top:3px solid var(--accent);padding:15px 20px;border-radius:0 0 8px 8px;display:flex;flex-direction:column;gap:2px}
+.profile-page .hero-portrait figcaption strong{font-size:16px}
+.profile-page .hero-portrait figcaption span{font-size:13px;color:var(--body)}
+.profile-page .references{padding:18px 0 22px}
+.profile-page .reference-head{margin-bottom:6px}
+.profile-page .reference-head p{font-size:15px}
+.profile-page .today{padding:52px 0;background:#f1efe8;border-bottom:1px solid #d9d7cd}
+.profile-page .today-grid{display:grid;grid-template-columns:1fr 1.35fr;gap:70px;align-items:start}
+.profile-page .today .eyebrow{color:#655027;margin-bottom:14px}
+.profile-page .today h2{font-size:30px;line-height:1.2;max-width:18ch}
+.profile-page .today-role{font-size:16px;font-weight:600;margin-top:12px}
+.profile-page .today-copy p{font-size:17px;color:var(--body);line-height:1.65}
+.profile-page .today-copy p+p{margin-top:12px}
+.profile-page .today-copy .text-link{display:inline-block;margin-top:18px;font-size:14px}
+.profile-page .cases{padding-top:76px;padding-bottom:36px}
+.profile-page .section-heading h2,.profile-page .section-heading h1{font-size:clamp(32px,3.5vw,46px);line-height:1.15}
+.profile-page .section-heading .section-lede{font-size:17px;max-width:30ch}
+.profile-page .case-grid{gap:26px}
+.profile-page .expert-card{border-radius:8px}
+.profile-page .expert-image{aspect-ratio:3/2;object-position:center}
+.profile-page .case-body{padding:28px}
+.profile-page .case-heading{margin-bottom:0}
+.profile-page .sector{font-size:12px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:8px}
+.profile-page .case-heading h3{font-size:32px}
+.profile-page .company{font-size:18px;font-weight:650;color:var(--ink);margin-top:9px}
+.profile-page .case-body .mission-role{font-size:14px;line-height:1.45;margin-top:8px;margin-bottom:24px;color:var(--body)}
+.profile-page .mission-role span{display:block;font-size:13px;color:var(--muted);margin-top:4px}
+.profile-page .expert-card h4{font-size:21px;min-height:2.5em}
+.profile-page .case-body>p{font-size:16px;margin-top:14px}
+.profile-page .case-body .intervention{padding-top:16px}
+.profile-page .case-body .case-proof{font-size:16px;min-height:3.2em}
+.profile-page .maturity{font-size:14px!important;padding-top:16px;padding-bottom:24px}
+.profile-page .maturity span{font-size:13px}
+.profile-page .maturity strong{font-size:19px}
+.profile-page .case-body>.btn{font-size:14px;gap:10px;padding:14px 16px}
+.profile-page .image-note{font-size:13px}
+.profile-page .career{padding-top:42px;padding-bottom:72px}
+.profile-page .career .section-heading{margin-bottom:32px}
+.profile-page .career-row{display:grid;grid-template-columns:130px minmax(0,1.1fr) minmax(0,1fr);gap:28px;padding:30px 0;border-top:1px solid var(--line)}
+.profile-page .career-row h3{font-size:23px;line-height:1.25;letter-spacing:-.025em}
+.profile-page .career-row p{font-size:15px;color:var(--body);line-height:1.65}
+.profile-page .career-row .career-date{font-size:13px;font-weight:650;color:var(--muted);padding-top:3px}
+.profile-page .career-row .career-role{font-size:14px;margin-top:8px}
+.profile-page .early-copy p+p{margin-top:14px}
+.profile-page .early-copy strong{font-weight:650;color:var(--ink)}
+.profile-page .credentials{grid-template-columns:1.25fr 1.25fr 1fr;margin-top:18px;padding:30px 0;gap:40px;border-bottom:0;align-items:start}
+.profile-page .credentials>div{gap:16px}
+.profile-page .credentials img{height:45px;width:100px}
+.profile-page .credentials img[src$="gem.svg"]{height:45px;width:100px}
+.profile-page .credentials>div:last-child{padding-top:8px}
+.profile-page .credentials strong{font-size:18px}
+.profile-page .credentials span{font-size:13px;line-height:1.55}
+.profile-page .bio{padding:68px 0;background:#f0f3ef}
+.profile-page .practice{margin:0;padding:0;border:0;border-radius:0;background:transparent}
+.profile-page .practice h2{font-size:clamp(30px,3vw,42px);line-height:1.2;max-width:28ch}
+.profile-page .practice-intro{gap:64px}
+.profile-page .practice-intro p{font-size:18px;max-width:62ch}
+.profile-page .book-preview{margin-right:18px;width:135px}
+.profile-page .operating-model{margin-top:38px}
+.profile-page .practice-bottom{margin-top:28px}
+.profile-page .formats{padding:76px 0}
+.profile-page .format-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.profile-page .format-card{padding:30px;border:1px solid var(--line);border-top:3px solid var(--ink);background:#fff;display:flex;flex-direction:column}
+.profile-page .format-card:last-child{border-top-color:#ab7b22}
+.profile-page .format-card h3{font-size:28px;line-height:1.2;max-width:20ch}
+.profile-page .format-card>p:not(.eyebrow){font-size:16px;color:var(--body);margin-top:18px}
+.profile-page .format-card .format-need{font-weight:600;color:var(--ink)!important}
+.profile-page .format-card .format-result{font-size:14px!important;border-top:1px solid var(--line);padding-top:18px;margin-top:auto!important}
+.profile-page .format-card>p:nth-last-child(2){padding-bottom:26px}
+.profile-page .contact{padding:68px 0}
+.profile-page .contact-grid{display:grid;grid-template-columns:1fr 340px;gap:70px;align-items:center}
+.profile-page .contact .eyebrow{font-size:12px;color:#cbd2d1;margin:0 0 22px}
+.profile-page .contact h2{font-size:48px}
+.profile-page .contact p:not(.eyebrow){font-size:18px;margin-bottom:0}
+.profile-page .contact-actions{display:flex;flex-direction:column;gap:14px;align-items:stretch}
+.profile-page .contact-actions .btn{justify-content:space-between}
+.profile-page .contact-actions .btn-secondary{color:white;border-color:#a4b0b1}
+.profile-page .contact-actions .btn-secondary:hover{background:#2e3d42}
+.profile-page .contact-actions .text-link{font-size:15px;align-self:flex-start;margin-top:8px;padding:8px 0}
+.profile-page .footer-inner{font-size:13px}
+.profile-page .text-link:hover{text-decoration-thickness:2px}
+.profile-page .section,.profile-page .today{scroll-margin-top:20px}
+@media(min-width:801px) and (max-width:1100px){
+  .profile-page .hero-grid{grid-template-columns:minmax(0,1fr) 260px;gap:32px}
+  .profile-page .hero h1{font-size:48px}
+  .profile-page .hero-actions{gap:18px;flex-wrap:wrap}
+  .profile-page .nav{gap:18px}.profile-page .nav nav{gap:16px}.profile-page .nav nav a{font-size:13px}
+  .profile-page .nav>.btn{font-size:12px;padding:12px}
+  .profile-page .career-row{grid-template-columns:100px 1fr 1fr;gap:22px}
+}
+@media(max-width:800px){
+  .profile-page .nav{min-height:0}.profile-page .nav nav{gap:14px}
+  .profile-page .hero{padding:42px 0 36px}
+  .profile-page .hero-grid{grid-template-columns:minmax(0,1fr) 220px;gap:30px}
+  .profile-page .hero h1{font-size:42px}
+  .profile-page .hero-lede{font-size:18px;margin-top:20px}
+  .profile-page .hero-actions{flex-wrap:wrap;gap:18px}
+  .profile-page .hero-facts{flex-wrap:wrap;gap:6px 20px;margin-top:24px;padding-top:18px}
+  .profile-page .hero-facts strong{font-size:22px}
+  .profile-page .hero-portrait figcaption{padding:14px}
+  .profile-page .today{padding:38px 0}.profile-page .today-grid{gap:32px;grid-template-columns:1fr 1.3fr}.profile-page .today h2{font-size:27px}
+  .profile-page .cases{padding-top:54px}
+  .profile-page .case-body{padding:22px}.profile-page .case-body>.btn{font-size:13px;padding:13px 12px}
+  .profile-page .case-grid{gap:20px}
+  .profile-page .career-row{grid-template-columns:100px 1fr;gap:12px 24px}.profile-page .career-row>p:last-child,.profile-page .early-copy{grid-column:2}
+  .profile-page .credentials{gap:24px}
+  .profile-page .bio{padding:50px 0}.profile-page .practice-intro{gap:32px}.profile-page .book-preview{width:110px;margin-right:8px}
+  .profile-page .format-grid{gap:20px}.profile-page .format-card{padding:24px}.profile-page .format-card h3{font-size:25px}
+  .profile-page .contact-grid{grid-template-columns:1fr 300px;gap:30px}.profile-page .contact h2{font-size:40px}
+}
+@media(max-width:600px){
+  .profile-page .nav{gap:12px 8px}.profile-page .nav nav{gap:10px}.profile-page .nav nav a{font-size:14px;padding:8px 0}.profile-page .nav>.btn{font-size:12px;padding:11px 9px;gap:8px;min-height:44px}
+  .profile-page .hero{padding:34px 0 30px}.profile-page .hero-grid{grid-template-columns:1fr;gap:28px}
+  .profile-page .hero .eyebrow{font-size:11px;margin-bottom:16px}
+  .profile-page .hero h1{font-size:clamp(32px,9.2vw,48px);line-height:1.1;letter-spacing:-.045em}
+  .profile-page .hero h1 br{display:block}
+  .profile-page .hero-lede{font-size:18px;line-height:1.55;margin-top:20px}
+  .profile-page .hero-practice{font-size:14px;line-height:1.6;margin-top:14px}
+  .profile-page .hero-actions{margin-top:24px;gap:16px;align-items:stretch}
+  .profile-page .hero-actions .text-link{align-self:flex-start;padding:6px 0}
+  .profile-page .hero-facts{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px;padding-top:20px;font-size:13px}
+  .profile-page .hero-facts strong{font-size:24px;display:block;line-height:1.2;margin-bottom:5px}
+  .profile-page .hero-portrait{display:grid;grid-template-columns:112px 1fr;align-items:stretch;background:#eeeae1;border-radius:6px;overflow:hidden}
+  .profile-page .hero-portrait picture{border-radius:0}
+  .profile-page .hero-portrait img{aspect-ratio:1/1;object-position:center 34%}
+  .profile-page .hero-portrait figcaption{border:0;border-left:3px solid var(--accent);border-radius:0;padding:16px;justify-content:center}
+  .profile-page .hero-portrait figcaption strong{font-size:16px}.profile-page .hero-portrait figcaption span{font-size:12px}
+  .profile-page .references{padding:15px 0 18px}.profile-page .reference-head p{font-size:14px}.profile-page .logo-group li{height:68px}
+  .profile-page .today{padding:32px 0}.profile-page .today-grid{grid-template-columns:1fr;gap:22px}.profile-page .today h2{font-size:28px;max-width:none}.profile-page .today-role{margin-top:10px;font-size:15px}.profile-page .today .eyebrow{margin-bottom:12px}.profile-page .today-copy p{font-size:16px}
+  .profile-page .cases{padding-top:44px;padding-bottom:20px}.profile-page .section-heading h1,.profile-page .section-heading h2{font-size:31px;line-height:1.2}.profile-page .section-heading .section-lede{font-size:16px;max-width:none;margin-top:18px}
+  .profile-page .case-grid{gap:24px}.profile-page .case-body{padding:24px}.profile-page .case-heading h3{font-size:31px}.profile-page .company{font-size:17px}.profile-page .case-body .mission-role{font-size:13px;margin-bottom:22px}.profile-page .mission-role span{font-size:12px}
+  .profile-page .expert-card h4{font-size:21px;min-height:0}.profile-page .case-body>p{font-size:16px}.profile-page .case-body .case-proof{min-height:0}.profile-page .case-body>.btn{font-size:14px;padding:14px 13px}
+  .profile-page .career{padding:30px 0 42px}.profile-page .career-row{grid-template-columns:1fr;gap:10px;padding:24px 0}.profile-page .career-row>p:last-child,.profile-page .early-copy{grid-column:auto}.profile-page .career-row h3{font-size:22px}.profile-page .career-row .career-date{font-size:12px}.profile-page .career-row .career-role{margin-top:6px}
+  .profile-page .credentials{grid-template-columns:1fr 1fr;gap:26px 18px;margin-top:8px;padding-top:26px;padding-bottom:0}.profile-page .credentials>div:last-child{grid-column:1/-1;padding-top:0;flex-direction:column;align-items:flex-start;gap:4px}.profile-page .credentials strong{font-size:17px;max-width:none}.profile-page .credentials span{font-size:12px}
+  .profile-page .bio{padding:42px 0}.profile-page .practice{padding:0;margin:0}.profile-page .practice h2{font-size:29px}.profile-page .practice-intro{gap:22px}.profile-page .practice-intro p{font-size:16px}.profile-page .book-preview{width:102px;margin:2px 0 6px 4px}.profile-page .operating-model{margin-top:30px}.profile-page .practice-bottom{gap:20px}.profile-page .practice-bottom p{font-size:15px}
+  .profile-page .formats{padding:44px 0}.profile-page .format-grid{grid-template-columns:1fr;gap:20px}.profile-page .format-card{padding:25px}.profile-page .format-card h3{font-size:26px}.profile-page .format-card>p:not(.eyebrow){font-size:16px}.profile-page .format-card .eyebrow{font-size:11px;margin-bottom:16px}
+  .profile-page .contact{padding:44px 0}.profile-page .contact-grid{grid-template-columns:1fr;gap:30px}.profile-page .contact h2{font-size:36px}.profile-page .contact p:not(.eyebrow){font-size:17px;margin-top:20px}.profile-page .contact .eyebrow{font-size:11px;margin-bottom:18px}.profile-page .contact-actions .btn{font-size:15px}.profile-page .contact-actions .text-link{margin-top:0}
+}
+@media(max-width:360px){
+  .profile-page .brand{font-size:14px}.profile-page .nav>.btn{font-size:11px;padding:10px 7px;gap:4px}.profile-page .nav nav a{font-size:13px}
+  .profile-page .hero h1{font-size:31px}.profile-page .hero-portrait{grid-template-columns:90px 1fr}.profile-page .hero-portrait figcaption{padding:12px}.profile-page .hero-portrait figcaption span{font-size:11px}
+  .profile-page .case-body{padding:20px}.profile-page .case-body>.btn{font-size:13px}.profile-page .section-heading h2,.profile-page .section-heading h1{font-size:29px}
+}
+@media print{
+  .profile-page .hero,.profile-page .today,.profile-page .career,.profile-page .bio,.profile-page .formats,.profile-page .contact{padding:24px 0}
+  .profile-page .hero-portrait{max-width:200px}.profile-page .contact .eyebrow,.profile-page .contact p{color:var(--ink)}.profile-page .contact mark{color:var(--ink)}
+}
+
+/* Iteration 2: shorter copy and a visible language switch at every width. */
+.profile-page.concise-page .nav{display:grid;grid-template-columns:auto 1fr auto auto;gap:24px;align-items:center}
+.profile-page.concise-page .nav .brand{margin:0}
+.profile-page.concise-page .nav .main-nav{display:flex;justify-content:flex-end;gap:25px;width:auto;order:0}
+.profile-page.concise-page .nav .language-switch{display:flex;gap:0;align-items:center;justify-content:center;width:auto;order:0;white-space:nowrap;font-size:12px}
+.profile-page.concise-page .language-switch a{display:inline-flex;align-items:center;justify-content:center;min-width:36px;min-height:44px;padding:8px 6px;font-size:12px;font-weight:600;text-decoration:none}
+.profile-page.concise-page .language-switch a[aria-current]{font-weight:800;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:5px}
+.profile-page.concise-page .language-switch>span{color:var(--muted)}
+.profile-page.concise-page .hero{padding-top:50px;padding-bottom:42px}
+.profile-page.concise-page .hero-facts{align-items:baseline}
+.profile-page.concise-page .cases{padding-top:56px;padding-bottom:30px}
+.profile-page.concise-page .case-body .mission-role{margin-bottom:0}
+.profile-page.concise-page .case-body .intervention{margin-top:20px;font-size:17px}
+.profile-page.concise-page .case-body .case-proof{margin-top:18px}
+.profile-page.concise-page .career{padding:32px 0 58px}
+.profile-page.concise-page .career h2{font-size:32px;margin-bottom:25px}
+.profile-page.concise-page .career-compact{display:grid;grid-template-columns:1fr 1fr;gap:60px}
+.profile-page.concise-page .career-compact ul{list-style:none}
+.profile-page.concise-page .career-compact li{border-top:1px solid var(--line);padding:10px 0;font-size:17px;font-weight:550;line-height:1.5}
+.profile-page.concise-page .career-period{font-size:13px;font-weight:650;color:var(--muted);margin-bottom:10px}
+.profile-page.concise-page .credentials{grid-template-columns:1fr 1fr;gap:60px;padding:30px 0 0;margin-top:24px}
+.profile-page.concise-page .credentials>div{padding:0;display:flex;flex-direction:row;gap:25px;align-items:center;grid-column:auto}
+.profile-page.concise-page .credentials img{flex:0 0 95px}
+.profile-page.concise-page .credentials span{font-size:14px;max-width:25ch}
+.profile-page.concise-page .practice-intro{gap:40px}
+.profile-page.concise-page .practice h2{max-width:28ch;font-size:clamp(30px,3.2vw,44px)}
+.profile-page.concise-page .practice-intro p{font-size:17px;margin-top:18px}
+.profile-page.concise-page .practice-bottom{justify-content:flex-end}
+.profile-page.concise-page .contact{padding:64px 0}
+@media(max-width:1050px){
+  .profile-page.concise-page .nav{gap:18px}.profile-page.concise-page .nav .main-nav{gap:18px}
+  .profile-page.concise-page .career-compact,.profile-page.concise-page .credentials{gap:32px}
+}
+@media(max-width:800px){
+  .profile-page.concise-page .nav{grid-template-columns:minmax(0,1fr) auto;gap:4px 20px;padding-top:10px;padding-bottom:10px}
+  .profile-page.concise-page .nav .brand{grid-column:1;grid-row:1}
+  .profile-page.concise-page .nav .language-switch{grid-column:2;grid-row:1;justify-content:flex-end}
+  .profile-page.concise-page .nav .main-nav{grid-column:1;grid-row:2;justify-content:flex-start;gap:22px}
+  .profile-page.concise-page .nav>.btn{grid-column:2;grid-row:2;min-height:44px;justify-self:end;font-size:12px;padding:10px 13px}
+  .profile-page.concise-page .language-switch a{min-width:38px}
+  .profile-page.concise-page .credentials>div{gap:18px;flex-direction:column;align-items:flex-start}
+}
+@media(max-width:600px){
+  .profile-page.concise-page .nav{gap:4px 14px}
+  .profile-page.concise-page .nav .main-nav{gap:20px}
+  .profile-page.concise-page .nav .main-nav a{font-size:13px;white-space:nowrap}
+  .profile-page.concise-page .nav .language-switch a{font-size:12px}
+  .profile-page.concise-page .hero{padding:30px 0}
+  .profile-page.concise-page .hero-facts{align-items:baseline}
+  .profile-page.concise-page .cases{padding-top:40px;padding-bottom:24px}
+  .profile-page.concise-page .case-body .intervention{font-size:16px}
+  .profile-page.concise-page .career{padding:26px 0 42px}
+  .profile-page.concise-page .career h2{font-size:29px;margin-bottom:22px}
+  .profile-page.concise-page .career-compact{grid-template-columns:1fr;gap:26px}
+  .profile-page.concise-page .career-compact li{padding:9px 0;font-size:16px}
+  .profile-page.concise-page .credentials{gap:24px 18px;margin-top:28px}
+  .profile-page.concise-page .credentials>div{gap:12px}
+  .profile-page.concise-page .credentials img{flex-basis:auto;width:90px;height:45px}
+  .profile-page.concise-page .credentials span{font-size:12px}
+  .profile-page.concise-page .practice h2{font-size:30px}
+  .profile-page.concise-page .practice-intro p{font-size:16px}
+  .profile-page.concise-page .contact{padding:44px 0}
+}
+@media(max-width:360px){
+  .profile-page.concise-page .nav{gap:4px 10px}
+  .profile-page.concise-page .nav .main-nav{gap:12px}
+  .profile-page.concise-page .nav .main-nav a{font-size:12px}
+  .profile-page.concise-page .nav>.btn{font-size:11px;gap:7px;padding:10px}
+}

@@ -4,10 +4,11 @@ Site personnel statique de Rémi Buczek, publié par GitHub Pages depuis `main` 
 
 ## Parcours
 
-- `index.html` : promesse IA agentique, triptyque métier/problème/agent, rendez-vous direct, références défilantes, bénéfices et quatre indicateurs réunis, quatre métiers illustrés, présentation et méthode personnelle, accompagnement en quatre étapes.
-- `offre.html` : landing d’acquisition autonome, hors navigation de la home.
-- `ressources.html` : accès historique aux cas et à la méthode personnelle ; pas d’extraits affichés. Les ancres historiques sont conservées.
-- `assets/site.css` : styles partagés, contrastes renforcés, petits écrans et réduction des animations.
+- `index.html` (30/10/2026) : Rémi, Head of Product IA hands-on ; photo, références défilantes, quatre missions illustrées, autres expériences, formation, agents IA et guide, contact. Environ 340 mots visibles. L’offre d’agents pour les experts a quitté le site.
+- `en/index.html` : version anglaise de l’accueil (Head of Product AI), sélecteur FR | EN dans l’en-tête, `hreflang` réciproques. `assets/site.js` choisit ses textes selon la langue de la page.
+- `offre.html` : redirection vers l’accueil ; l’ancienne landing de l’offre d’agents reste dans l’historique git.
+- `ressources.html` : accès historique aux quatre missions et à la méthode personnelle, aligné sur l’accueil ; pas d’extraits affichés. Les ancres historiques sont conservées.
+- `assets/site.css` : styles partagés, contrastes renforcés, petits écrans et réduction des animations ; styles de l’accueil sous la classe `profile-page`.
 - `assets/site.js` : dialogues accessibles et pause du carrousel, sans suivi d’audience ni stockage local.
 
 Sept références nominales établies : Givaudan, Galileo, InVivo / Soufflet, EPEX SPOT, Pierre & Vacances Center Parcs, ManoMano et La Fourche. Six logos réels, ManoMano en texte. Aucune entreprise inventée pour compléter la quinzaine déclarée dans le parcours. Logo La Fourche : [source officielle](https://lafourche.fr/icons/brand_logos/fr.svg), SVG sans script ni ressource externe.
@@ -16,9 +17,9 @@ Les quatre scènes métier dans `assets/experts/` sont des illustrations fictive
 
 La couverture du guide Hands-on figure dans le sous-bloc de méthode personnelle, avec un schéma HTML/CSS « Organisation classique → Ma pratique augmentée ». Ce schéma présente le fonctionnement revendiqué par Rémi, pas un organigramme client ni une suppression de postes constatée. Les autres aperçus restent accessibles à leurs URL historiques. Aucun PDF complet ni document client brut dans ce dépôt.
 
-Le chiffre +50 à +100 % exprime une estimation de potentiel sur les tâches ciblées, à préciser et mesurer. Les quatre indicateurs sont affichés sans accordéon. « Contexte produit » est un raccourci de praticiens, pas une norme ni des nombres d’utilisateurs : Malteur 0→1, Parfumeur 1→10, Pédagogue 10→100, Trader 100→1 000, selon la dernière répartition demandée par Rémi.
+« Contexte produit » est un raccourci de praticiens, pas une norme ni des nombres d’utilisateurs : Malteur 0→1, Parfumeur 1→10, Pédagogue 10→100, Trader 100→1 000, selon la dernière répartition demandée par Rémi.
 
-Trois familles d’actions : rendez-vous sur `https://calendly.com/remibuczek/call`, quatre demandes d’étude de cas, une demande de méthode. Le carrousel dispose d’une commande par icône et libellé accessible, d’une pause au survol/focus et d’un respect de la réduction des animations.
+Quatre familles d’actions : rendez-vous sur `https://calendly.com/remibuczek/call`, quatre demandes d’étude de cas, une demande de méthode, un message par le formulaire (`contact`). Les images de partage sont `assets/og-profil.jpg` et `assets/og-profil-en.jpg` ; `assets/og-accueil.jpg`, celle de l’ancienne offre, n’est plus utilisée. Le carrousel dispose d’une commande par icône et libellé accessible, d’une pause au survol/focus et d’un respect de la réduction des animations.
 
 ## Formulaires et raccordement à venir
 
