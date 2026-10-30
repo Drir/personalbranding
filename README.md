@@ -4,7 +4,7 @@ Site personnel statique de Rémi Buczek, publié par GitHub Pages depuis `main` 
 
 ## Parcours
 
-- `index.html` (30/10/2026, version 3) : Rémi, Head of Product IA hands-on. Accroche « Quand le produit bloque, je trouve comment avancer. », photo fondue dans une zone ocre, références défilantes, quatre missions (douleur, preuve, « Voir l’étude de cas »), autres expériences sur une ligne avec « Avant 2020 » dépliable, formation, « Head of Product + écosystème d’agents IA » avec une frise amont / pendant / aval utilisable sans JavaScript, bandeau de la méthode, contact. Environ 350 mots visibles. L’offre d’agents pour les experts a quitté le site.
+- `index.html` (30/10/2026, version 4) : « Head of Product IA. Hands-on. » (l’anglais garde « When the product stalls, I find a way forward. »), photo naturelle en couleur dans un cadre ocre, références défilantes, quatre missions (douleur, preuve, « Voir l’étude de cas »), autres expériences et formation en cartes (« Avant 2020 » dépliable), « Head of Product + écosystème d’agents IA » avec une frise amont / pendant / aval utilisable sans JavaScript, bandeau de la méthode, contact. Environ 360 mots visibles. L’offre d’agents pour les experts a quitté le site.
 - `en/index.html` : version anglaise de l’accueil (Head of Product AI), sélecteur FR | EN dans l’en-tête, `hreflang` réciproques. `assets/site.js` choisit ses textes selon la langue de la page.
 - `offre.html` : redirection vers l’accueil ; l’ancienne landing de l’offre d’agents reste dans l’historique git.
 - `ressources.html` : accès historique aux quatre missions et à la méthode personnelle, aligné sur l’accueil ; pas d’extraits affichés. Les ancres historiques sont conservées.

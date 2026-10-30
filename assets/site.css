@@ -314,8 +314,8 @@ dialog{position:fixed;inset:0;margin:auto;width:min(560px,calc(100vw - 32px));ma
 .profile-page.dynamic-page .early-career{flex:.7;min-width:0;border-left:1px solid var(--line);padding-left:28px}
 .profile-page.dynamic-page .early-career summary{display:flex;align-items:center;justify-content:space-between;gap:12px;cursor:pointer;list-style:none;font-size:14px;font-weight:650;min-height:44px;margin-top:-8px}
 .profile-page.dynamic-page .early-career summary::-webkit-details-marker{display:none}
-.profile-page.dynamic-page .early-career summary>span{font-size:24px;font-weight:400;transition:transform .2s}
-.profile-page.dynamic-page .early-career[open] summary>span{transform:rotate(45deg)}
+.profile-page.dynamic-page .early-career summary>span:not(.experience-company){font-size:24px;font-weight:400;transition:transform .2s}
+.profile-page.dynamic-page .early-career[open] summary>span:not(.experience-company){transform:rotate(45deg)}
 .profile-page.dynamic-page .early-career p{font-size:13px;line-height:1.8;margin-top:12px}
 .profile-page.dynamic-page .education{margin-top:34px;display:grid;grid-template-columns:180px 1fr;gap:30px;align-items:center}
 .profile-page.dynamic-page .education h2{font-size:20px;margin:0}
@@ -449,4 +449,83 @@ dialog{position:fixed;inset:0;margin:auto;width:min(560px,calc(100vw - 32px));ma
 @media print{
   .profile-page.dynamic-page .early-career>*{display:block}
   .profile-page.dynamic-page .guide-banner,.profile-page.dynamic-page .operating-model{break-inside:avoid}
+}
+
+/* Iteration 4: natural portrait and experience / education cards. */
+.profile-page.refined-page .hero .eyebrow{font-size:13px;letter-spacing:.035em;text-transform:none;line-height:1.6}
+.profile-page.refined-page .hero h1 mark{box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.profile-page.refined-page .portrait-zone{height:500px;min-height:0;padding:24px;background:#dfbd80;border:1px solid #d2ac69;border-radius:10px;align-self:center;box-shadow:0 3px 0 #e8e2d580}
+.profile-page.refined-page .portrait-zone::after{display:none}
+.profile-page.refined-page .hero-portrait{display:block;position:relative;width:100%;height:100%;border-radius:5px;background:#dfbd80;overflow:hidden}
+.profile-page.refined-page .hero-portrait picture{display:block;width:100%;height:100%;mask-image:none;-webkit-mask-image:none;border-radius:0}
+.profile-page.refined-page .hero-portrait img{display:block;width:100%;height:100%;object-fit:cover;object-position:60% 18%;filter:none;transform:scale(1.48);transform-origin:65% 18%;aspect-ratio:auto}
+.profile-page.refined-page .career{padding:28px 0 58px}
+.profile-page.refined-page .career h2{font-size:28px;margin-bottom:24px}
+.profile-page.refined-page .experience-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch;gap:24px}
+.profile-page.refined-page .experience-card{min-width:0;min-height:244px;display:flex;flex-direction:column;padding:26px;border:1px solid #d9d3c7;border-radius:9px;background:var(--white);box-shadow:0 3px 0 #e8e2d580}
+.profile-page.refined-page .experience-card h3,.profile-page.refined-page .experience-company{display:block;min-height:2.4em;font-size:25px;font-weight:750;letter-spacing:-.035em;line-height:1.2;color:var(--ink)}
+.profile-page.refined-page .experience-card .experience-role{font-size:15px;line-height:1.6;color:var(--body);margin-top:16px;max-width:30ch}
+.profile-page.refined-page .experience-date{margin-top:auto;padding-top:24px;font-size:13px;line-height:1.5;color:var(--muted);font-variant-numeric:tabular-nums;letter-spacing:.02em}
+.profile-page.refined-page .early-career{display:block;padding:0}
+.profile-page.refined-page .early-career summary{display:flex;flex-direction:column;align-items:flex-start;justify-content:space-between;gap:24px;min-height:242px;margin:0;padding:26px;list-style:none;cursor:pointer;border-radius:8px}
+.profile-page.refined-page .early-career summary::-webkit-details-marker{display:none}
+.profile-page.refined-page .history-toggle{display:flex;align-items:center;justify-content:center;width:38px;height:38px;align-self:flex-end;border:1px solid #d9cba9;border-radius:50%;background:#faf5e8;font-size:25px!important;line-height:1;font-weight:400;transition:transform .2s,background .2s}
+.profile-page.refined-page .early-career summary:hover .history-toggle{background:#eed8a4}
+.profile-page.refined-page .early-career[open] summary{min-height:0;flex-direction:row;align-items:center;gap:16px;padding-bottom:18px}
+.profile-page.refined-page .early-career[open] .experience-company{min-height:0}
+.profile-page.refined-page .early-career[open] .history-toggle{align-self:center;flex:0 0 38px;transform:rotate(45deg)}
+.profile-page.refined-page .early-career ul{margin:0 26px 24px;padding-top:10px;border-top:1px solid #e0dbd0;list-style:none}
+.profile-page.refined-page .early-career li{font-size:14px;line-height:1.6;padding:4px 0;color:var(--body)}
+.profile-page.refined-page .education{display:block;margin-top:36px}
+.profile-page.refined-page .education h2{font-size:22px;margin:0 0 20px}
+.profile-page.refined-page .credentials{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;padding:0;margin:0;border:0}
+.profile-page.refined-page .credentials>.education-card{display:grid;grid-template-columns:94px minmax(0,1fr);gap:24px;align-items:center;min-height:116px;padding:24px 26px;border:1px solid #d9d3c7;border-radius:9px;background:var(--white);box-shadow:0 3px 0 #e8e2d580}
+.profile-page.refined-page .education-card img{width:94px;height:48px;object-fit:contain}
+.profile-page.refined-page .education-card span{font-size:14px;line-height:1.5;max-width:32ch;color:var(--ink)}
+@media(max-width:1050px){
+  .profile-page.refined-page .portrait-zone{height:480px;padding:18px}
+  .profile-page.refined-page .experience-grid{gap:18px}
+  .profile-page.refined-page .experience-card{padding:22px;min-height:254px}
+  .profile-page.refined-page .experience-card h3,.profile-page.refined-page .experience-company{font-size:23px}
+  .profile-page.refined-page .early-career{padding:0}.profile-page.refined-page .early-career summary{padding:22px;min-height:252px}
+  .profile-page.refined-page .early-career ul{margin-left:22px;margin-right:22px}
+  .profile-page.refined-page .credentials>.education-card{grid-template-columns:80px minmax(0,1fr);padding:22px;gap:18px}
+  .profile-page.refined-page .education-card img{width:80px}
+}
+@media(max-width:800px){
+  .profile-page.refined-page .portrait-zone{height:440px;padding:16px}
+  .profile-page.refined-page .hero .eyebrow{font-size:12px}
+  .profile-page.refined-page .experience-grid{grid-template-columns:1fr;gap:18px}
+  .profile-page.refined-page .experience-card{min-height:0;padding:24px}
+  .profile-page.refined-page .experience-card h3,.profile-page.refined-page .experience-company{min-height:0;font-size:26px}
+  .profile-page.refined-page .experience-card .experience-role{max-width:none;margin-top:14px}
+  .profile-page.refined-page .experience-date{padding-top:22px}
+  .profile-page.refined-page .early-career{padding:0}
+  .profile-page.refined-page .early-career summary,.profile-page.refined-page .early-career[open] summary{min-height:102px;padding:24px;flex-direction:row;align-items:center;gap:16px}
+  .profile-page.refined-page .history-toggle{align-self:center;flex:0 0 38px}
+  .profile-page.refined-page .early-career ul{margin:0 24px 24px}
+  .profile-page.refined-page .credentials>.education-card{grid-template-columns:1fr;gap:18px;padding:24px;align-content:start}
+}
+@media(max-width:600px){
+  .profile-page.refined-page .hero{padding-bottom:26px}
+  .profile-page.refined-page .hero-grid{gap:30px}
+  .profile-page.refined-page .hero .eyebrow{font-size:12px;letter-spacing:.025em}
+  .profile-page.refined-page .portrait-zone{height:340px;width:100%;max-width:430px;margin:0;justify-self:center;padding:18px;border-radius:9px}
+  .profile-page.refined-page .hero-portrait img{object-position:60% 18%;transform:scale(1.32);transform-origin:65% 18%}
+  .profile-page.refined-page .career{padding:24px 0 42px}
+  .profile-page.refined-page .career h2{font-size:27px;margin-bottom:22px}
+  .profile-page.refined-page .education{margin-top:32px}
+  .profile-page.refined-page .education h2{font-size:22px;margin-bottom:18px}
+  .profile-page.refined-page .credentials{grid-template-columns:1fr;gap:18px}
+  .profile-page.refined-page .credentials>.education-card{grid-template-columns:80px minmax(0,1fr);gap:22px;padding:22px;min-height:112px;align-items:center;align-content:center}
+  .profile-page.refined-page .education-card img{width:80px;height:44px}
+  .profile-page.refined-page .education-card span{font-size:13px}
+}
+@media(max-width:360px){
+  .profile-page.refined-page .portrait-zone{height:310px;padding:16px}
+  .profile-page.refined-page .experience-card{padding:22px}
+  .profile-page.refined-page .experience-card h3,.profile-page.refined-page .experience-company{font-size:24px}
+  .profile-page.refined-page .early-career{padding:0}.profile-page.refined-page .early-career summary{padding:22px}
+  .profile-page.refined-page .credentials>.education-card{grid-template-columns:65px minmax(0,1fr);padding:20px;gap:18px}
+  .profile-page.refined-page .education-card img{width:65px;height:40px}
 }
