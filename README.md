@@ -23,7 +23,7 @@ Quatre familles d’actions : rendez-vous sur `https://calendly.com/remibuczek/c
 
 ## Formulaires et raccordement à venir
 
-Rémi a confirmé qu’aucun outil de collecte/CRM n’est encore choisi. Actuellement, le formulaire valide l’email et le consentement puis prépare un `mailto` dans la messagerie du visiteur. Le visiteur doit l’envoyer lui-même. Aucun lead n’est enregistré automatiquement, aucune newsletter n’est ajoutée, aucun succès d’envoi n’est simulé.
+Depuis le 30/10/2026, le formulaire `#lead-form` des trois pages (accueil français, accueil anglais, ressources) envoie les demandes à Formspree, formulaire « remibuczek.com » du compte de Rémi : `data-endpoint="https://formspree.io/f/meaalzez"`. Formspree les transmet à remibuczek@gmail.com et les garde 30 jours dans son archive (offre gratuite, 50 demandes par mois). Le script envoie `email`, `message`, `resource`, `consent`, le piège `_gotcha` et un `_subject` préfixé par `[remibuczek.com]`. Sans `data-endpoint`, le script repasse en mode `mailto`. Aucune newsletter n’est ajoutée, aucun succès d’envoi n’est simulé.
 
 Pour raccorder un service choisi par Rémi :
 

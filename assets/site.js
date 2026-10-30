@@ -255,9 +255,7 @@
 
     try {
       const payload = new FormData(form);
-      payload.delete("_gotcha");
       payload.set("_subject", `[remibuczek.com] ${request.subject}`);
-      payload.set("_template", "table");
       const response = await fetch(endpoint, {
         method: "POST",
         body: payload,
@@ -265,7 +263,7 @@
       });
       if (!response.ok) throw new Error("Request rejected");
       const result = await response.json().catch(() => ({}));
-      if (result.success === false || result.success === "false") throw new Error("Request rejected");
+      if (result.ok === false || result.errors) throw new Error("Request rejected");
       if (currentSession !== session) return;
       form.reset();
       if (resource) resource.value = resourceKey;
